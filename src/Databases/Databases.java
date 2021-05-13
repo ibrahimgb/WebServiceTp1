@@ -47,8 +47,8 @@ public class Databases {
 
     public static void createConnection() throws SQLException, ClassNotFoundException {
         String url = "jdbc:postgresql://localhost:5432/WebServices";
-        String name = "ibrahimgb";
-        String pass = "igamo2017";
+        String name = "youDontWantToKnowMyUsername";
+        String pass = "******";
 
         //Class.forName("com.mysql.cj.jdbc.Driver");
         Class.forName("org.postgresql.Driver");
