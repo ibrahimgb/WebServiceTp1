@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="499.0" prefWidth="857.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <TableView fx:id="tableview" layoutX="2.0" layoutY="64.0" prefHeight="431.0" prefWidth="857.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <columns>
+                <TableColumn fx:id="nService" prefWidth="150.0" text="Numero Du Service" />
+                <TableColumn fx:id="nom" minWidth="0.0" prefWidth="205.0" text="Nom" />
+                <TableColumn fx:id="emplacement" prefWidth="193.0" text="Emplacemont de service" />
+            </columns>
+        </TableView>
+        <Button fx:id="add" layoutX="376.0" layoutY="25.0" mnemonicParsing="false" onAction="#add" prefHeight="25.0" prefWidth="117.0" text="Ajouter" />
+        <Button fx:id="edit" layoutX="532.0" layoutY="24.0" mnemonicParsing="false" onAction="#edit" prefHeight="25.0" prefWidth="117.0" text="Modifier" />
+        <Button fx:id="delete" layoutX="679.0" layoutY="23.0" mnemonicParsing="false" onAction="#delete" prefHeight="25.0" prefWidth="117.0" text="Supprimier" />
+      <TextField fx:id="serviceToSerchFor" layoutX="70.0" layoutY="25.0" onKeyPressed="#reloadTable" prefHeight="24.0" prefWidth="264.0" promptText="qu'est ce que vous cherchez aujourd'hui" />
+      <Button layoutX="21.0" layoutY="24.0" mnemonicParsing="false" onAction="#reloadTable" prefHeight="24.0" prefWidth="24.0" />
+    </children>
+</AnchorPane>
